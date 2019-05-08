@@ -8,14 +8,14 @@ html {
 body {
   background: linear-gradient(
     45deg,
-    #800000,
+    #4e0202,
     #000000,
-    #800000,
+    #4e0202,
     #000000,
-    #800000
+    #4e0202
   );
-  animation: gradient 20s linear infinite;
-  background-size: 1800% 100%;
+  animation: gradient 25s linear infinite;
+  background-size: 1500% 100%;
   animation-direction: reverse;
 }
 img {
@@ -493,13 +493,13 @@ body > ul > li > ul > li > a {
   padding: 12px 15px;
   background: linear-gradient(
     45deg,
-    #800000,
+    #4e0202,
     #000000,
     #4e0202,
     #000000,
-    #800000
+    #4e0202
   );
-  background-size: 1800% 100%;
+  background-size: 1200% 100%;
   animation-direction: reverse;
   color: #ffffff;
   overflow: hidden;
