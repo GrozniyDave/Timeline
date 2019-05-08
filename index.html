@@ -5,119 +5,489 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>zigzag_dropdown</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="design/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ThreeDaysGrace || Timeline</title>
   </head>
   <body>
+      <button class="trigger" onclick="showAlbum()">Hide Albums</button>
+
+    <div class="absolute-nav">
     <ul class="menu cf">
          <!-- album three days grace -->
       <li>
             <a href="">Three Days Grace <span class="cursive">(2003-2005)</span></a>
             <ul class="submenu">
                 
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=m3aLdsjxb8U','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Burn"</a></li>
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=MIEebIYrmfE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Just Like You"</a></li>
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=d8ekz_CSBVg','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"I Hate Everything About You"</a></li>
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=7NQ8OCcQ3LA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Home"</a></li>
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=BMAq_oNsNWI','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Scared"</a></li>
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=kCJ_NzepKQs','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Let You Down"</a></li>
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=NVzqr6m2_ak','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Now or Never"</a></li>
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=5_JQVZgdLB4','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Born Like This"</a></li>
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=CmWVlXrxGEA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Drown"</a></li>
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=hR3efTQd-tE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Wake Up"</a></li>
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=cGjmXTYQwLA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Take Me Under"</a></li>
-              <li><a onclick="window.open('https://www.youtube.com/watch?v=o3hxReEEBIw','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Overrated"</a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=m3aLdsjxb8U','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Burn"      <i class="fa fa-play"></i></a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=MIEebIYrmfE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Just Like You"      <i class="fa fa-play"></i></a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=d8ekz_CSBVg','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"I Hate Everything About You"      <i class="fa fa-play"></i></a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=7NQ8OCcQ3LA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Home"      <i class="fa fa-play"></i></a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=BMAq_oNsNWI','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Scared"      <i class="fa fa-play"></i></a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=kCJ_NzepKQs','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Let You Down"      <i class="fa fa-play"></i></a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=NVzqr6m2_ak','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Now or Never"      <i class="fa fa-play"></i></a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=5_JQVZgdLB4','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Born Like This"      <i class="fa fa-play"></i></a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=CmWVlXrxGEA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Drown"      <i class="fa fa-play"></i></a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=hR3efTQd-tE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Wake Up"      <i class="fa fa-play"></i></a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=cGjmXTYQwLA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Take Me Under"      <i class="fa fa-play"></i></a></li>
+              <li><a onclick="window.open('https://www.youtube.com/watch?v=o3hxReEEBIw','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Overrated"      <i class="fa fa-play"></i></a></li>
             </ul>
         <!-- album one x -->
       <li>
         <a href="">One X <span class="cursive">(2006-2008)</span></a>
         <ul class="submenu">
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=diz8JwXNX3w','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"It's All Over"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=Snf3jzJt64U','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Pain"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=ysho2xTWUYo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Animal I Have Become"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=SRbA_JzFKuA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Never Too Late"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=UnwT-kB4hfE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"On My Own"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=ixZDTiXiHsc','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Riot"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=eE29TpRjPOE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Get Out Alive"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=7Zm3ZIsFZkg','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Let it Die"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=6hx2Ql_WmZE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Over and Over"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=05wXNKzOkRM','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Time of Dying"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=GbfOBGhRbe0','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Gone Forever"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=e2YRVZ4cmeo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"One-X"</a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=diz8JwXNX3w','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"It's All Over"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=Snf3jzJt64U','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Pain"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=ysho2xTWUYo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Animal I Have Become"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=SRbA_JzFKuA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Never Too Late"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=UnwT-kB4hfE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"On My Own"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=ixZDTiXiHsc','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Riot"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=eE29TpRjPOE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Get Out Alive"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=7Zm3ZIsFZkg','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Let it Die"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=6hx2Ql_WmZE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Over and Over"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=05wXNKzOkRM','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Time of Dying"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=GbfOBGhRbe0','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Gone Forever"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=e2YRVZ4cmeo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"One-X"      <i class="fa fa-play"></i></a></li>
         </ul>
         <!-- album life starts now -->
         <li>
         <a href=""> Life Starts Now <span class="cursive">(2009-2012)</span></a>
         <ul class="submenu">
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=ApE3mtAqUiI','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Bitter Taste"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=3K7l8-GmkVw','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Break"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=C_nqXvwOXaw','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"World So Cold"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=yaYJ68Akj2M','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Lost In You"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=TcpUF5bidoY','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The Good Life"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=QK6rJ_fcEPM','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"No More"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=Dh262qUpcEY','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Last To Know"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=Gpamw2BbrPc','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Someone Who Cares"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=Ta4pvBCRcdU','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Bully"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=5R39U-4GrRE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Without You"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=j8fhK_sK3V4','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Goin' Down"</a></li>
-          <li><a onclick="window.open('https://www.youtube.com/watch?v=0STSrGfWsq8','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Life Starts Now"</a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=ApE3mtAqUiI','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Bitter Taste"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=3K7l8-GmkVw','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Break"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=C_nqXvwOXaw','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"World So Cold"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=yaYJ68Akj2M','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Lost In You"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=TcpUF5bidoY','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The Good Life"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=QK6rJ_fcEPM','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"No More"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=Dh262qUpcEY','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Last To Know"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=Gpamw2BbrPc','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Someone Who Cares"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=Ta4pvBCRcdU','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Bully"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=5R39U-4GrRE','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Without You"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=j8fhK_sK3V4','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Goin' Down"      <i class="fa fa-play"></i></a></li>
+          <li><a onclick="window.open('https://www.youtube.com/watch?v=0STSrGfWsq8','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Life Starts Now"      <i class="fa fa-play"></i></a></li>
         </li>
         </ul>
         <!-- album transit of venus -->
      <li>
             <a href="">Transit of Venus<span class="cursive">(2012-2014)</span></a>
             <ul class="submenu">
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=gZZmzeiQ4mA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Sign of the Times"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=8AKF-wfmNAI','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Chalk Outline"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=1EE0dA1T128','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The High Road"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=JouB-ZvYdFg','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Operate"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=qOTrJCR7RMk','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Anonymous"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=QkSASi_eN_k','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Misery Loves My Company"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=7NmgjEMsE-w','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Give In to Me"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=_3G6AkiZHT4','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Happiness"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=o2dXxerxiug','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Give Me a Reason"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=tzxmgsikA-Y','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Time That Remains"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=Oh92mave0M0','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Expectations"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=NQlXK2L1oeo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Broken Glass"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=6t6zlyz7OEg','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Unbreakable Heart"</a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=gZZmzeiQ4mA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Sign of the Times"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=8AKF-wfmNAI','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Chalk Outline"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=1EE0dA1T128','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The High Road"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=JouB-ZvYdFg','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Operate"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=qOTrJCR7RMk','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Anonymous"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=QkSASi_eN_k','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Misery Loves My Company"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=7NmgjEMsE-w','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Give In to Me"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=_3G6AkiZHT4','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Happiness"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=o2dXxerxiug','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Give Me a Reason"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=tzxmgsikA-Y','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Time That Remains"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=Oh92mave0M0','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Expectations"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=NQlXK2L1oeo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Broken Glass"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=6t6zlyz7OEg','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Unbreakable Heart"      <i class="fa fa-play"></i></a></li>
             </ul>
             <!-- album human -->
      <li>
             <a href="">Human<span class="cursive">(2015-Now)</span></a>
             <ul class="submenu">
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=50WH8OpSTS4','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Human Race"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=zTGOw4kr3OM','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Painkiller"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=lLu1sXwAjCI','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Fallen Angel"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=t3_otTQrM_Q','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Landmine"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=c7Kzjg18-dM','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Tell Me Why"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=8Zx6RXGNISk','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"I Am Machine"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=0eA35x3zxgY','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"So What"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=iOyMa3rJN8o','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Car Crash"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=jNgq1s7Z1w4','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Nothing Fair In Love and War"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=9_aqAbN-1ck','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"One Too"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=6gUcNoC_EAA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The End Is not the Answer"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=qI_TvHh0xSc','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The Real You"</a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=50WH8OpSTS4','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Human Race"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=zTGOw4kr3OM','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Painkiller"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=lLu1sXwAjCI','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Fallen Angel"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=t3_otTQrM_Q','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Landmine"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=c7Kzjg18-dM','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Tell Me Why"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=8Zx6RXGNISk','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"I Am Machine"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=0eA35x3zxgY','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"So What"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=iOyMa3rJN8o','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Car Crash"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=jNgq1s7Z1w4','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Nothing Fair In Love and War"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=9_aqAbN-1ck','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"One Too"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=6gUcNoC_EAA','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The End Is not the Answer"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=qI_TvHh0xSc','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The Real You"      <i class="fa fa-play"></i></a></li>
                     
             </ul>
             <!-- album outsider -->
      <li>
             <a href="">Outsider<span class="cursive">(2015-Now)</span></a>
             <ul class="submenu">
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=tUDjU4ygVew','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Right Left Wrong"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=XblV5A1PlDo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The Mountain"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=EYspF1qHhEI','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"I Am an Outsider"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=pwGS4Yn5qLo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Infra-Red"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=PrW_mUb2Emw','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Nothing to Lose but You"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=7UU0n1BNTzo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Me Against You"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=srELLgsaHXc','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Love Me or Leave Me"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=Rmft1BlnWeY','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">""Strange Days</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=rl6PDH2lLXU','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Villain I'm Not"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=Lg4_BtBU1sw','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Chasing the First Time"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=-d3O17hmUGU','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The New Real"</a></li>
-                    <li><a onclick="window.open('https://www.youtube.com/watch?v=QwH-zpeco3I','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The Abyss"</a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=tUDjU4ygVew','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Right Left Wrong"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=XblV5A1PlDo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The Mountain"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=EYspF1qHhEI','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"I Am an Outsider"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=pwGS4Yn5qLo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Infra-Red"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=PrW_mUb2Emw','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Nothing to Lose but You"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=7UU0n1BNTzo','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Me Against You"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=srELLgsaHXc','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Love Me or Leave Me"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=Rmft1BlnWeY','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Strange Days"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=rl6PDH2lLXU','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Villain I'm Not"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=Lg4_BtBU1sw','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"Chasing the First Time"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=-d3O17hmUGU','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The New Real"      <i class="fa fa-play"></i></a></li>
+                    <li><a onclick="window.open('https://www.youtube.com/watch?v=QwH-zpeco3I','',' scrollbars=yes,menubar=no,width=600,height=400, resizable=yes,toolbar=no,location=yes,status=no')">"The Abyss"      <i class="fa fa-play"></i></a></li>
                     
             </ul>
       </li>
     </ul>
-     
+  </div>
+
+    <div class="list-timeline container" >
+
+      <ul class="unstyled-list list-timeline__list">
+          <li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="1992-01-01T00:00:00+00:00" class="date">Jan 1, 1992</time>
+        </div>
+        <h1 class="timeline-item__title">
+          Early years.
+        </h1>
+      </div>
+        <div class="timeline-item__image">
+            <img  alt="The beginning"
+             src="/design/img/groundswell.jpg" />
+        </div>
+        <div class="timeline-item__body">
+          The band has its origins in a five-piece band called "Groundswell", 
+          formed in Norwood, Ontario, in 1992. Groundswell released one 
+          full-length album, Wave of Popular Feeling. The band's line-up consisted
+           of lead vocalist Adam Gontier, drummer Neil Sanderson, bassist Brad Walst,
+            lead guitarist Phil Crowe, and rhythm guitarist Joe Grant. Most of the members
+             were attending high school when the band formed. By the end of 1995,
+              the band had broken up.</div>
+    </div>
+  </div>
+</li>
+
+          <li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="1997-01-01T00:00:00+00:00" class="date">Jan 1, 1997</time>
+        </div>
+        <h1 class="timeline-item__title">
+            "Three Days Grace"
+        </h1>
+      </div>
+        <div class="timeline-item__image">
+            <img alt="Breakup to makeup" 
+            src="/design/img/adam.jpg" />
+        </div>
+        <div class="timeline-item__body">
+          In 1997, Gontier, Sanderson, and Walst regrouped as "Three Days Grace". 
+          According to Gontier, the name refers to a sense of urgency, with the 
+          question being whether someone could change something in their life if 
+          they had only three days to make a change. </div>
+    </div>
+  </div>
+</li>
+
+          <li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="2003-07-01T00:00:00+00:00" class="date">July 22, 2003</time>
+        </div>
+        <h1 class="timeline-item__title">
+          First Single "I hate Everything About You"
+        </h1>
+      </div>
+        <div class="timeline-item__image">
+            <img alt="Red, White, and Black " src="/design/img/hateeverything.jpg" />
+        </div>
+        <div class="timeline-item__body">
+            To support the eponymous album, the band released their first single, "I Hate Everything About You"
+             (the song whose demo had gotten the band a record deal) in 2003. The song received heavy airplay 
+             and rapidly became widely recognizable, and was labelled as the band's "breakout hit".
+              After Barry Stock joined as lead guitarist in late 2003, the band toured continuously and extensively
+               for nearly two years in support of their major label debut. The album peaked at No. 9 on the 
+               Canadian Albums Chart and No. 69 on the Billboard 200, and was certified platinum in the U.S. 
+               by the RIAA in December 2004 and double platinum in Canada by the CRIA.
+               
+        </div>
+    </div>
+  </div>
+</li>
+
+          <li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="2003-07-22T00:00:00+00:00" class="date">July 22, 2003</time>
+        </div>
+        <h1 class="timeline-item__title">
+          First album "Three Days Grace"
+        </h1>
+      </div>
+        <div class="timeline-item__image">
+            <img alt="getting signed" src="/design/img/threedaysgrace.jpg" />
+        </div>
+        <div class="timeline-item__body">
+          After being signed to Jive, the band moved to Long View Farms, a studio in Boston,
+           to record their debut album. The self-titled album was finished in Woodstock, New York 
+           and released on July 22, 2003. It was met with generally favorable reviews.
+        </div>
+    </div>
+  </div>
+</li>
+
+          <li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="2003-11-25T00:00:00+00:00" class="date">November 25, 2003</time>
+        </div>
+        <h1 class="timeline-item__title">
+          Acquiring a new member
+        </h1>
+      </div>
+        <div class="timeline-item__image">
+            <img   alt="Acquiring a new member" src="/design/img/barry.jpg" />
+        </div>
+        <div class="timeline-item__body">
+          After acquiring lead guitarist Barry Stock in late 2003, Three Days Grace toured
+           continuously and extensively for almost two years in support of their major label debut.
+        </div>
+    </div>
+  </div>
+</li>
+
+          <li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="2006-06-13T00:00:00+00:00" class="date">June 13, 2006</time>
+        </div>
+        <h1 class="timeline-item__title">
+          Album "One-X"
+        </h1>
+      </div>
+      <div class="timeline-item__image">
+          <img   alt="One-X (2006 - 2008)" src="/design/img/one_x.jpg" />
+      </div>
+        <div class="timeline-item__body">
+            One-X peaked at No. 2 on the Canadian album chart and at No. 5 on the Billboard 200,
+             selling 78,000 copies in the U.S. in its first week of release. "Animal I Have Become"
+             was Three Days Grace's most successful single, becoming 2006's most played rock song in 
+             Canada. The album helped Three Days Grace become the No. 1 rock artist by airplay in 
+             the U.S. and Canada in 2007, with Billboard ranking them as the No. 1 rock artist of 2007.
+              One-X was certified triple platinum by the RIAA in the U.S. on March 4, 2016, and 
+             double platinum by the CRIA in Canada in July 2007 </div>
+    </div>
+  </div>
+</li>
+
+          <li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="2007-08-30T00:00:00+00:00" class="date">August 30, 2007</time>
+        </div>
+        <h1 class="timeline-item__title">
+          One-X (2006 - 2008)
+        </h1>
+      </div>
+        <div class="timeline-item__image">
+            <img   alt="One-X (2006 - 2008)" src="/design/img/onex.jpg" />
+        </div>
+        <div class="timeline-item__body">
+          One-X peaked at number two on the Canadian album chart and at number
+           five on the Billboard 200, selling 78,000 copies in the US in its first
+            week of release. Its first single, "Animal I Have Become", was Three Days
+             Grace's most successful, becoming 2006's most played rock song in Canada,
+              and the album helped propel Three Days Grace to become the number one rock
+               artist in airplay in the US and Canada in 2007, with Billboard ranking them
+                as the number one rock artist of the year in 2007.
+        </div>
+    </div>
+  </div>
+</li>
+
+          <li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="2009-09-22T00:00:00+00:00" class="date">September 22, 2009</time>
+        </div>
+        <h1 class="timeline-item__title">
+          Life Starts Now 
+        </h1>
+      </div>
+        <div class="timeline-item__image">
+            <img   alt="Life Starts Now " src="/design/img/life_starts_now.jpg" />
+        </div>
+        <div class="timeline-item__body">
+          From March to August 2009, Three Days Grace recorded their third album at studios in Vancouver,
+           British Columbia, and Los Angeles, with producer Howard Benson, who had worked with them on their
+            previous releases. The album, titled Life Starts Now, was released on September 22, 2009. The 
+            first single from the album, "Break", was released on September 1, 2009.
+        </div>
+    </div>
+  </div>
+</li>
+
+          <li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="2012-04-02T00:00:00+00:00" class="date">October 2, 2012</time>
+        </div>
+        <h1 class="timeline-item__title">
+            Album "Transit of Venus"
+        </h1>
+      </div>
+        <div class="timeline-item__image">
+            <img   alt="Three Days Grace" src="/design/img/transit_of_venus.jpg" />
+        </div>
+        <div class="timeline-item__body">
+            Transit of Venus is the fourth studio album by Canadian rock band, Three Days Grace. 
+          The album was released on October 2, 2012. The album was produced by Don Gilmore and 
+          recorded at Revolution Studios in Toronto. On June 5, 2012, the same day as Venus' visible
+           transit across the sun, the band released the album title and release date. Five videos were
+            released via YouTube to promote the album, all containing teasers of songs on the album </div>
+    </div>
+  </div>
+</li>
+
+          <li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="2012-10-02T00:00:00+00:00" class="date">January 9, 2013</time>
+        </div>
+        <h1 class="timeline-item__title">
+                    Legend Voice is leaving the group, here comes a New Era.
+
+        </h1>
+      </div>
+        <div class="timeline-item__image">
+            <img   alt="Transit of Venus" src="/design/img/matt.jpg" />
+        </div>
+        <div class="timeline-item__body">
+          
+            On January 9, 2013, the band announced that Gontier had left the band. They described Gontier's departure 
+            as being abrupt and unexplained. The departure came just weeks before a co-headlining tour. Gontier
+             explained that he was simply ready to start a new chapter in his life, stating, "After twenty years of 
+             being part of an ever evolving band, I have been inspired by life, to move on and to continue to evolve 
+             on my own terms." Brad Walst's brother, Matt (of My Darkest Days), became the band's new lead singer.
+        </div>
+    </div>
+  </div>
+</li>
+<li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="1992-01-01T00:00:00+00:00" class="date">March 31, 2015</time>
+        </div>
+        <h1 class="timeline-item__title">
+          Album "Human"
+        </h1>
+      </div>
+        <div class="timeline-item__image">
+            <img  alt="The begining " src="/design/img/human1.jpg" />
+        </div>
+        <div class="timeline-item__body">
+            It's a little heavier, and it's just more aggressive and it's just got this fresh vibe."
+             A new track entitled "Painkiller" was released to US Rock radio stations on April 8,
+             2014. On June 6, 2014, "Painkiller" reached No. 1 on the Mainstream Rock Charts, which
+              made it the eleventh No. 1 single the band has released. In an August 2014 interview, 
+              the band revealed the title of their next single, "I Am Machine", which was released September
+               30, 2014, On January 26, 2015, it was revealed that the new album would be titled Human.
+                On March 23, 2015, "Human Race" was released as the third single. Human was released on March 31.   </div>
+  </div>
+</li>
+<li class="list-timeline__item timeline-item timeline-item--viewer">
+  <div class="timeline-item__line"></div>
+  <div class="timeline-item__dot">
+    <div class="dot__graphic"></div>
+  </div>
+  <div class="timeline-item__content-wrapper">
+    <div class="timeline-item__content">
+      <div class="timeline-item__header">
+        <div class="timeline-item__date">
+          <time datetime="1992-01-01T00:00:00+00:00" class="date">March 9, 2018</time>
+        </div>
+        <h1 class="timeline-item__title">
+          Album "Outsider" 
+        </h1>
+      </div>
+        <div class="timeline-item__image">
+            <img  alt="The begining " src="/design/img/outsider.jpg" />
+        </div>
+        <div class="timeline-item__body">
+            The band began recording their sixth studio album, Outsider, in July 2017, releasing
+             "The Mountain" as the first single on January 25, 2018 with an accompanying music video.
+              The song peaked at No. 1 on the Billboard Mainstream Rock chart in March 2018 and became 
+              their 13th No. 1 on the chart while tying the record with Van Halen. The album was 
+              released on March 9, 2018. On June 12, "Infra-Red" was released as the band's second 
+              single from the album. "Infra-Red" peaked at No. 1 on the Billboard's Mainstream Rock 
+              Songs chart and it is their 14th No. 1 single. With this latest achievement, the band broke
+               Van Halen's two-decade record of topping the chart. On November 13, 2018 "[[Right Left 
+               Wrong" was released as the band's third single from the album. It peaked at No. 1 on the 
+               Billboard's Mainstream Rock Songs chart and it is their 15th No. 1 single. On March 14, 
+               2019 the band won Rock Artist of the Year on 2019 iHeartRadio Music Awards.    </div>
+  </div>
+</li>
+
+      </ul>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+  <script src="js.js"></script>
   </body>
 </html>
