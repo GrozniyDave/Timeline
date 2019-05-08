@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+
 html {
   font-family: "Cuprum", sans-serif;
   font-size: 16px;
@@ -42,6 +44,45 @@ p {
 .absolute-nav {
   z-index: 9999;
   margin: 20px;
+}
+.leftbar {
+  height: 4000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(16, 1fr);
+  width: auto;
+  right: 80%;
+  position: absolute;
+  margin: 70px 0 20px 20px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.rightbar {
+  height: 4000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(17, 1fr);
+  width: auto;
+  left: 70%;
+  position: absolute;
+  margin: 70px 0 20px 20px;
+  word-wrap: break-word;
+  text-align: center;
+}
+.quote {
+  font-family: "Special Elite", cursive;
+  margin: 25px;
+  color: white;
+  width: auto;
+  font-size: 1rem;
+}
+.quote:before,
+.quote:after {
+  font-size: 3rem;
+  width: 1rem;
+  height: 1rem;
+  content: '"';
 }
 
 /* Clearing floats */
@@ -94,6 +135,23 @@ p {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100px;
+  border-radius: 0 0 50% 0;
+}
+.trigger1 {
+  color: white;
+  background: black;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Cuprum";
+  border: none;
+  padding: 1em;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  border-radius: 0 0 0 50%;
 }
 
 .menu a {
