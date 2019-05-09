@@ -634,6 +634,24 @@ body > ul > li > ul > li > a {
   }
 }
 
+.timeline-item__body:hover,
+.timeline-item__image:hover {
+  animation: image_blur 0.4s ease;
+  transform: scale(1.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+@keyframes image_blur {
+  0% {
+    -webkit-filter: blur(3px);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    transform: scale(1.2);
+  }
+}
+
 .timeline-header
   .timeline-header__content.timeline-header__content--with-image
   .timeline-header__image {
@@ -663,6 +681,7 @@ body > ul > li > ul > li > a {
   height: 3.125em;
   transform: translateX(-50%) scale(2);
   z-index: 99999;
+  animation: mouse-scroll 10s ease-in-out infinite;
 }
 
 .icon-arrows::after,
@@ -679,8 +698,8 @@ body > ul > li > ul > li > a {
   border-bottom: 1px solid #800000;
   margin: 0 0 0.125em 0.315em;
   transform: rotate(45deg);
-  animation: mouse-scroll 1s infinite;
-  animation-direction: alternate;
+  animation: mouse-scroll 2s infinite;
+  animation-direction: ease-in-out;
 }
 
 .icon-arrows::before {
