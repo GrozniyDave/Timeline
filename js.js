@@ -1,14 +1,14 @@
 "use strict";
 
 function showAlbum() {
-  let x = document.querySelector(".absolute-nav");
-  let a = document.querySelector(".trigger");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    a.innerHTML = "Hide Albums  <i class='fa fa-close'></i> ";
+  let nav = document.querySelector(".absolute-nav");
+  let button1 = document.querySelector(".trigger");
+  if (nav.style.display === "none") {
+    nav.style.display = "block";
+    button1.innerHTML = "Hide Albums  <i class='fa fa-close'></i> ";
   } else {
-    x.style.display = "none";
-    a.innerHTML = "Show Albums  <i class='fa fa-expand'></i>";
+    nav.style.display = "none";
+    button1.innerHTML = "Show Albums  <i class='fa fa-expand'></i>";
   }
 }
 
@@ -20,10 +20,17 @@ function showQuotes() {
   if (right.style.display === "") {
     right.style.display = "none";
     left.style.display = "none";
-    button2.style.display = "none";
-    console.log("You've just hidden the Quotes!");
+    button2.innerHTML = "Show Facts  <i class='fa fa-expand'></i> ";
+    console.log("You've just hidden the Facts!!");
   } else {
-    console.log("Nothing to Hide)");
+    console.log("Facts are displayed!)");
+    right.style.display = "block";
+    right.classList.add("rightbar");
+    left.style.display = "block";
+    left.classList.add("lefttbar");
+    right.style.display = "";
+    left.style.display = "";
+    button2.innerHTML = "Hide Facts  <i class='fa fa-close'></i> ";
   }
 }
 
@@ -48,3 +55,16 @@ let facts = [
   "Received 2 BMI Awards for “Animal I’ve Become” and “Pain” (2006)",
   "“I Hate Everything About You” peaked at #2 on Modern and Active chart for 47 weeks (2003)"
 ];
+
+ScrollReveal().reveal(".absolute-nav", { delay: 400 });
+ScrollReveal().reveal(".trigger", { delay: 600 });
+ScrollReveal().reveal(".trigger1", { delay: 600 });
+
+ScrollReveal().reveal(".dot__graphic", { delay: 1000 });
+ScrollReveal().reveal(".timeline-item__line", { delay: 1000 });
+
+ScrollReveal().reveal(".timeline-item__header", { delay: 1000 });
+ScrollReveal().reveal(".timeline-item__image", { delay: 1100 });
+ScrollReveal().reveal(".timeline-item__body", { delay: 1200 });
+ScrollReveal().reveal(".quote", { delay: 1300 });
+ScrollReveal().reveal(".icon-scroll", { delay: 3000 });
