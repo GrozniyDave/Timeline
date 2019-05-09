@@ -57,7 +57,7 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(18, 1fr);
-  width: auto;
+  width: 500px;
   right: 70%;
   position: absolute;
   margin: 70px 0 20px 20px;
@@ -70,7 +70,7 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(18, 1fr);
-  width: auto;
+  width: 500px;
   left: 70%;
   position: absolute;
   margin: 70px 0 20px 20px;
@@ -82,9 +82,14 @@ body > div.rightbar > div > a {
   font-size: 1.5rem;
   cursor: pointer;
 }
+body > div.leftbar > div > a {
+  margin: 2px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 .quote {
   font-family: "Special Elite", cursive;
-  margin: 0 30px;
+  margin: 0;
   color: white;
   width: auto;
   font-size: 1rem;
@@ -95,6 +100,10 @@ body > div.rightbar > div > a {
   width: 1rem;
   height: 1rem;
   content: '"';
+}
+
+.song {
+  transform: scale(0.8) skewX(25deg);
 }
 
 /* Clearing floats */
@@ -634,16 +643,16 @@ body > ul > li > ul > li > a {
   }
 }
 
-.timeline-item__body:hover,
-.timeline-item__image:hover {
+.timeline-item__body:hover {
   animation: image_blur 0.4s ease;
   transform: scale(1.2);
   border-radius: 6px;
   overflow: hidden;
 }
+
 @keyframes image_blur {
   0% {
-    -webkit-filter: blur(3px);
+    -webkit-filter: blur(0px);
     transform: scale(1);
   }
   100% {
