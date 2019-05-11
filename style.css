@@ -342,9 +342,68 @@ body > ul > li > ul > li > a {
   margin: 0;
 }
 
-@media (min-width: 468px) {
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+@media screen and (max-width: 992px) {
   .list-timeline .list-timeline__no-items p {
     padding: 24px 30px 24px 35px;
+  }
+
+  .rightbar,
+  .leftbar,
+  .absolute-nav,
+  .trigger,
+  .trigger1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .icon-scroll {
+    display: none;
+  }
+  .menu {
+    margin: 0 auto;
+    width: 100vh;
+  }
+
+  .menu > li {
+    background: black;
+    position: relative;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  .rightbar,
+  .leftbar {
+    display: none;
+  }
+  .list-timeline .list-timeline__list {
+    background-size: 0 0;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    list-style: none;
+    overflow: visible;
+  }
+  .absolute-nav {
+    transform: translateX(-5vh);
   }
 }
 
